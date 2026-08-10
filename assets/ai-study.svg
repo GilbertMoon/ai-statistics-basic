@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 300" role="img" aria-labelledby="title desc">
+<title id="title">AI 튜터와 공부하는 학생</title><desc id="desc">태블릿의 AI 튜터에게 힌트와 오답 분석을 받으며 공부하는 학생</desc>
+<rect width="460" height="300" rx="24" fill="#eef5ff"/>
+<rect x="0" y="224" width="460" height="76" fill="#b88b63"/>
+<rect x="20" y="32" width="66" height="156" rx="8" fill="#e5ecf4" stroke="#cbd6e4"/>
+<rect x="27" y="42" width="52" height="6" rx="3" fill="#b8c6d8"/><rect x="27" y="84" width="52" height="6" rx="3" fill="#b8c6d8"/><rect x="27" y="126" width="52" height="6" rx="3" fill="#b8c6d8"/>
+<path d="M49 74c-17-16-7-34 3-17 5-20 21-14 9 4 17-4 17 13 1 15z" fill="#6e9871"/><rect x="47" y="72" width="20" height="14" rx="3" fill="#a77955"/>
+<ellipse cx="188" cy="111" rx="53" ry="57" fill="#f0c39a"/><path d="M135 107q5-63 56-63 50 0 55 56-17-20-44-23-32-4-67 30z" fill="#2c241f"/><circle cx="170" cy="113" r="4" fill="#332b26"/><circle cx="207" cy="113" r="4" fill="#332b26"/><path d="M177 135q13 12 29 0" fill="none" stroke="#b56e5c" stroke-width="3" stroke-linecap="round"/>
+<path d="M125 214q8-70 64-70 57 0 68 70z" fill="#568663"/><path d="M154 163l34 36 39-36" fill="none" stroke="#467451" stroke-width="4"/>
+<path d="M125 205q-20 13-26 38" fill="none" stroke="#f0c39a" stroke-width="18" stroke-linecap="round"/><path d="M253 188q26-21 38-40" fill="none" stroke="#f0c39a" stroke-width="17" stroke-linecap="round"/><path d="M286 145q12 4 16 15m-12-17q13-5 21 4m-20-1q2-14 10-19" fill="none" stroke="#f0c39a" stroke-width="7" stroke-linecap="round"/>
+<path d="M109 228q68-16 112 6v54q-58-15-112-2z" fill="#fffdf8" stroke="#d6d0c8" stroke-width="4"/><path d="M221 235q30-9 54-2v50q-25-4-54 5z" fill="#fffdf8" stroke="#d6d0c8" stroke-width="4"/><path d="M221 237v51" stroke="#d2ccc5" stroke-width="3"/>
+<rect x="286" y="112" width="132" height="146" rx="13" fill="#202b40" stroke="#151d2e" stroke-width="6"/><rect x="299" y="126" width="106" height="105" rx="9" fill="#f1f7ff"/>
+<rect x="314" y="141" width="76" height="73" rx="16" fill="#dcecff" stroke="#68a6e8" stroke-width="4"/><rect x="332" y="153" width="40" height="29" rx="13" fill="#fff"/><circle cx="343" cy="167" r="4" fill="#315efb"/><circle cx="361" cy="167" r="4" fill="#315efb"/><path d="M342 188q12 9 24 0" fill="none" stroke="#315efb" stroke-width="3" stroke-linecap="round"/><path d="M352 141v-12" stroke="#68a6e8" stroke-width="4"/><circle cx="352" cy="125" r="5" fill="#68a6e8"/>
+<g font-family="Arial, sans-serif" font-weight="700" font-size="15"><rect x="287" y="52" width="111" height="36" rx="18" fill="#78b77c"/><text x="342" y="75" text-anchor="middle" fill="#fff">이해했니?</text><rect x="344" y="91" width="100" height="34" rx="17" fill="#6fa6e9"/><text x="394" y="113" text-anchor="middle" fill="#fff">힌트 제공</text><rect x="334" y="132" width="108" height="34" rx="17" fill="#8b6bc8"/><text x="388" y="154" text-anchor="middle" fill="#fff">오답 분석</text></g>
+</svg>
