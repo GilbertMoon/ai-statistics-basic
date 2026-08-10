@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" role="img" aria-labelledby="title desc">
+<title id="title">교과서로 공부하는 학생</title><desc id="desc">책상에서 교과서와 노트로 공부하는 학생과 책, 스탠드가 있는 장면</desc>
+<rect width="420" height="300" rx="24" fill="#f6f1e8"/>
+<rect x="0" y="224" width="420" height="76" fill="#b88b63"/>
+<rect x="20" y="32" width="66" height="156" rx="8" fill="#e8e1d7" stroke="#d4cabd"/>
+<rect x="27" y="42" width="52" height="6" rx="3" fill="#c8b9a8"/>
+<rect x="27" y="84" width="52" height="6" rx="3" fill="#c8b9a8"/>
+<rect x="27" y="126" width="52" height="6" rx="3" fill="#c8b9a8"/>
+<path d="M49 74c-17-16-7-34 3-17 5-20 21-14 9 4 17-4 17 13 1 15z" fill="#6e9871"/><rect x="47" y="72" width="20" height="14" rx="3" fill="#a77955"/>
+<rect x="32" y="177" width="82" height="16" rx="4" fill="#56789b"/><rect x="28" y="195" width="90" height="16" rx="4" fill="#75925f"/><rect x="36" y="213" width="84" height="14" rx="4" fill="#a27b59"/>
+<path d="M314 191l35-104" stroke="#4f5661" stroke-width="10" stroke-linecap="round"/><path d="M331 87q33-14 55 5l-10 30h-58z" fill="#59616c"/><circle cx="318" cy="205" r="14" fill="#4f5661"/>
+<ellipse cx="213" cy="113" rx="55" ry="58" fill="#f0c39a"/>
+<path d="M158 109q5-66 58-66 52 0 56 59-18-22-46-25-32-4-68 32z" fill="#2c241f"/><path d="M161 102q0 62 53 69 49-7 55-64-12 16-32 17-41 3-76-22z" fill="#f0c39a"/>
+<circle cx="193" cy="115" r="4" fill="#332b26"/><circle cx="232" cy="115" r="4" fill="#332b26"/><path d="M204 136q12 9 24 0" fill="none" stroke="#b56e5c" stroke-width="3" stroke-linecap="round"/>
+<path d="M148 214q9-70 68-70 59 0 69 70z" fill="#77808d"/><path d="M176 164l36 36 39-36" fill="none" stroke="#68717d" stroke-width="4"/>
+<path d="M150 207q-22 12-28 39" fill="none" stroke="#f0c39a" stroke-width="18" stroke-linecap="round"/><path d="M281 205q22 8 35 35" fill="none" stroke="#f0c39a" stroke-width="18" stroke-linecap="round"/>
+<path d="M132 227q76-18 118 8v55q-56-18-118-2z" fill="#fffdf8" stroke="#d6d0c8" stroke-width="4"/><path d="M250 235q40-11 75 2v48q-37-7-75 5z" fill="#fffdf8" stroke="#d6d0c8" stroke-width="4"/><path d="M250 237v52" stroke="#d2ccc5" stroke-width="3"/>
+<path d="M176 247l62-15" stroke="#365c8d" stroke-width="4" stroke-linecap="round"/>
+</svg>
