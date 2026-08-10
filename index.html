@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>통계적 가설검정 · 발표 장표 01</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="presentation-body">
+  <main class="presentation-shell" aria-label="통계 기초 발표 장표">
+    <header class="presentation-topbar">
+      <div class="brand">AI Statistics Basic</div>
+      <div class="topbar-actions">
+        <span class="slide-tag">가설검정 기초</span>
+        <button class="icon-button" id="openScript" type="button" aria-label="발표 스크립트 열기" title="발표 스크립트 열기">▤</button>
+      </div>
+    </header>
+
+    <section class="slide" id="slide01" data-slide="1" data-step="0">
+      <div class="slide-kicker">HYPOTHESIS TESTING · 01</div>
+      <h1 class="slide-title">5점 오른 성적,<br /><strong>정말 학습법 덕분일까?</strong></h1>
+
+      <div class="score-comparison" aria-label="기존 학습법과 새로운 AI 학습법의 평균 점수 비교">
+        <article class="score-card step-item" data-show-step="1">
+          <span class="score-label">기존 학습법</span>
+          <strong class="score-value">70<span>점</span></strong>
+        </article>
+
+        <div class="comparison-arrow step-item" data-show-step="2" aria-hidden="true">→</div>
+
+        <article class="score-card score-card-accent step-item" data-show-step="2">
+          <span class="score-label">새로운 AI 학습법</span>
+          <strong class="score-value">75<span>점</span></strong>
+          <span class="score-delta step-item" data-show-step="3">+5점 ↑</span>
+        </article>
+      </div>
+
+      <div class="question-area">
+        <p class="question question-primary step-item" data-show-step="4">정말 AI 학습법의 <strong>효과</strong>일까요?</p>
+        <div class="question-vs step-item" data-show-step="5">VS</div>
+        <p class="question question-secondary step-item" data-show-step="5">아니면 <strong>우연히 나타난 차이</strong>일까요?</p>
+      </div>
+
+      <div class="topic-reveal step-item" data-show-step="6">
+        <span>오늘의 핵심 도구</span>
+        <strong>통계적 가설검정</strong>
+      </div>
+    </section>
+
+    <footer class="presentation-footer">
+      <div class="progress-wrap" aria-label="현재 장표 위치">
+        <strong>01</strong><span>/ 08</span>
+      </div>
+      <div class="step-status" id="stepStatus">도입 화면</div>
+      <div class="nav-buttons">
+        <button class="nav-button" id="prevStep" type="button" aria-label="이전 단계">←</button>
+        <button class="nav-button nav-button-primary" id="nextStep" type="button" aria-label="다음 단계">→</button>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
