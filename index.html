@@ -20,10 +20,29 @@
       <section class="slide" id="slide01" data-slide="1">
         <div class="slide-kicker">HYPOTHESIS TESTING · 01</div>
         <h1 class="slide-title">5점 오른 성적,<br /><strong>정말 학습법 덕분일까?</strong></h1>
-        <div class="score-comparison">
-          <article class="score-card step-item" data-show-step="1"><span class="score-label">기존 학습법</span><strong class="score-value">70<span>점</span></strong></article>
+        <div class="score-comparison score-comparison-visual">
+          <article class="score-card score-card-visual step-item" data-show-step="1">
+            <span class="score-label score-label-pill">기존 학습법</span>
+            <div class="learning-visual traditional-visual" aria-hidden="true">
+              <div class="desk-scene">
+                <div class="student-head"></div><div class="student-body"></div>
+                <div class="book-stack"><i></i><i></i><i></i></div><div class="open-book"></div><div class="desk-lamp"></div>
+              </div>
+            </div>
+            <div class="score-copy"><span>교과서로 학습</span><strong class="score-value">70<span>점</span></strong></div>
+          </article>
           <div class="comparison-arrow step-item" data-show-step="2">→</div>
-          <article class="score-card score-card-accent step-item" data-show-step="2"><span class="score-label">새로운 AI 학습법</span><strong class="score-value">75<span>점</span></strong><span class="score-delta step-item" data-show-step="3">+5점 ↑</span></article>
+          <article class="score-card score-card-accent score-card-visual step-item" data-show-step="2">
+            <span class="score-label score-label-pill score-label-ai">새로운 AI 학습법</span>
+            <div class="learning-visual ai-visual" aria-hidden="true">
+              <div class="desk-scene">
+                <div class="student-head"></div><div class="student-body"></div><div class="tablet"><div class="ai-face">AI</div></div><div class="open-book"></div>
+                <span class="ai-bubble bubble-one">힌트 제공</span><span class="ai-bubble bubble-two">오답 분석</span>
+              </div>
+            </div>
+            <div class="score-copy"><span>AI 티칭으로 학습</span><strong class="score-value">75<span>점</span></strong></div>
+            <span class="score-delta step-item" data-show-step="3">+5점 ↑</span>
+          </article>
         </div>
         <div class="question-area"><p class="question question-primary step-item" data-show-step="4">정말 AI 학습법의 <strong>효과</strong>일까요?</p><div class="question-vs step-item" data-show-step="5">VS</div><p class="question question-secondary step-item" data-show-step="5">아니면 <strong>우연히 나타난 차이</strong>일까요?</p></div>
         <div class="topic-reveal step-item" data-show-step="6"><span>오늘의 핵심 도구</span><strong>통계적 가설검정</strong></div>
@@ -32,98 +51,24 @@
       <section class="slide" id="slide02" data-slide="2">
         <div class="slide-kicker">WHY HYPOTHESIS TESTING · 02</div>
         <h1 class="slide-title compact">우리는 왜 <strong>가설검정</strong>을 할까요?</h1>
-        <div class="logic-row">
-          <div class="logic-card step-item" data-show-step="1"><span>관찰된 차이가 있다</span><strong>70점 → 75점</strong></div>
-          <div class="not-equal step-item" data-show-step="2">≠</div>
-          <div class="logic-card step-item" data-show-step="2"><span>실제 효과가 있다고</span><strong>바로 결론</strong></div>
-        </div>
-        <div class="why-label step-item" data-show-step="3">왜 그럴까요?</div>
-        <div class="explain-card step-item" data-show-step="4">표본에서 관찰되는 결과에는<br /><strong>우연에 의한 변동</strong>이 영향을 줄 수 있습니다.</div>
-        <div class="definition-card step-item" data-show-step="5"><span>통계적 가설검정</span><strong>관찰된 차이가 우연만으로 설명하기 어려운지를<br />통계적으로 판단하는 과정</strong></div>
+        <div class="logic-row"><div class="logic-card step-item" data-show-step="1"><span>관찰된 차이가 있다</span><strong>70점 → 75점</strong></div><div class="not-equal step-item" data-show-step="2">≠</div><div class="logic-card step-item" data-show-step="2"><span>실제 효과가 있다고</span><strong>바로 결론</strong></div></div>
+        <div class="why-label step-item" data-show-step="3">왜 그럴까요?</div><div class="explain-card step-item" data-show-step="4">표본에서 관찰되는 결과에는<br /><strong>우연에 의한 변동</strong>이 영향을 줄 수 있습니다.</div><div class="definition-card step-item" data-show-step="5"><span>통계적 가설검정</span><strong>관찰된 차이가 우연만으로 설명하기 어려운지를<br />통계적으로 판단하는 과정</strong></div>
       </section>
 
-      <section class="slide" id="slide03" data-slide="3">
-        <div class="slide-kicker">HYPOTHESES · 03</div>
-        <h1 class="slide-title compact">두 개의 가설을 세워봅시다</h1>
-        <div class="hypothesis-grid">
-          <article class="hypothesis-card step-item" data-show-step="1"><span class="start-badge">출발점</span><h2>귀무가설 H₀</h2><strong class="hypothesis-core step-item" data-show-step="2">효과가 없다</strong><p class="step-item" data-show-step="2">AI 학습법은 점수 향상에<br />효과가 없다.</p></article>
-          <div class="vs-large step-item" data-show-step="3">VS</div>
-          <article class="hypothesis-card step-item" data-show-step="3"><h2>대립가설 H₁</h2><strong class="hypothesis-core step-item" data-show-step="4">효과가 있다</strong><p class="step-item" data-show-step="4">AI 학습법은 평균 점수를<br />증가시킨다.</p></article>
-        </div>
-        <div class="bottom-emphasis step-item" data-show-step="5"><span>가설검정의 출발점</span><strong>일단 H₀가 참이라고 가정하고 시작합니다.</strong></div>
-      </section>
+      <section class="slide" id="slide03" data-slide="3"><div class="slide-kicker">HYPOTHESES · 03</div><h1 class="slide-title compact">두 개의 가설을 세워봅시다</h1><div class="hypothesis-grid"><article class="hypothesis-card step-item" data-show-step="1"><span class="start-badge">출발점</span><h2>귀무가설 H₀</h2><strong class="hypothesis-core step-item" data-show-step="2">효과가 없다</strong><p class="step-item" data-show-step="2">AI 학습법은 점수 향상에<br />효과가 없다.</p></article><div class="vs-large step-item" data-show-step="3">VS</div><article class="hypothesis-card step-item" data-show-step="3"><h2>대립가설 H₁</h2><strong class="hypothesis-core step-item" data-show-step="4">효과가 있다</strong><p class="step-item" data-show-step="4">AI 학습법은 평균 점수를<br />증가시킨다.</p></article></div><div class="bottom-emphasis step-item" data-show-step="5"><span>가설검정의 출발점</span><strong>일단 H₀가 참이라고 가정하고 시작합니다.</strong></div></section>
 
-      <section class="slide" id="slide04" data-slide="4">
-        <div class="slide-kicker">ROADMAP · 04</div>
-        <h1 class="slide-title compact">가설검정은 이렇게 진행합니다</h1>
-        <div class="roadmap">
-          <div class="road-step step-item" data-show-step="1"><b>1</b><strong>질문 설정</strong><span>AI 학습법은 효과가 있을까?</span></div>
-          <div class="road-arrow step-item" data-show-step="1">↓</div>
-          <div class="road-step step-item" data-show-step="1"><b>2</b><strong>가설 설정</strong><span>H₀ 효과 없음 · H₁ 효과 있음</span></div>
-          <div class="road-arrow step-item" data-show-step="2">↓</div>
-          <div class="road-core step-item" data-show-step="5">
-            <div class="road-step step-item" data-show-step="2"><b>3</b><strong>유의수준 α 설정</strong><span>판단의 기준선 정하기</span></div>
-            <div class="road-arrow step-item" data-show-step="3">↓</div>
-            <div class="road-step step-item" data-show-step="3"><b>4</b><strong>p-value 계산</strong><span>데이터에서 p-value 구하기</span></div>
-            <small>★ 핵심 판단 요소: α와 p-value</small>
-          </div>
-          <div class="road-arrow step-item" data-show-step="4">↓</div>
-          <div class="road-step step-item" data-show-step="4"><b>5</b><strong>비교 및 판단</strong><span>p-value와 α 비교 → H₀ 기각 여부 판단</span></div>
-        </div>
-      </section>
+      <section class="slide" id="slide04" data-slide="4"><div class="slide-kicker">ROADMAP · 04</div><h1 class="slide-title compact">가설검정은 이렇게 진행합니다</h1><div class="roadmap"><div class="road-step step-item" data-show-step="1"><b>1</b><strong>질문 설정</strong><span>AI 학습법은 효과가 있을까?</span></div><div class="road-arrow step-item" data-show-step="1">↓</div><div class="road-step step-item" data-show-step="1"><b>2</b><strong>가설 설정</strong><span>H₀ 효과 없음 · H₁ 효과 있음</span></div><div class="road-arrow step-item" data-show-step="2">↓</div><div class="road-core step-item" data-show-step="5"><div class="road-step step-item" data-show-step="2"><b>3</b><strong>유의수준 α 설정</strong><span>판단의 기준선 정하기</span></div><div class="road-arrow step-item" data-show-step="3">↓</div><div class="road-step step-item" data-show-step="3"><b>4</b><strong>p-value 계산</strong><span>데이터에서 p-value 구하기</span></div><small>★ 핵심 판단 요소: α와 p-value</small></div><div class="road-arrow step-item" data-show-step="4">↓</div><div class="road-step step-item" data-show-step="4"><b>5</b><strong>비교 및 판단</strong><span>p-value와 α 비교 → H₀ 기각 여부 판단</span></div></div></section>
 
-      <section class="slide" id="slide05" data-slide="5">
-        <div class="slide-kicker">CORE CONCEPTS · 05</div>
-        <h1 class="slide-title compact">α와 p-value가 핵심입니다</h1>
-        <div class="concept-grid">
-          <article class="concept-card step-item" data-show-step="1"><h2>유의수준 α</h2><strong>판단의 기준선</strong><p class="step-item" data-show-step="2">분석 전에 미리 정합니다.<br /><b>α = 0.05 (5%)</b><br />H₀ 기각 판단의 기준</p></article>
-          <article class="concept-card step-item" data-show-step="3"><h2>p-value</h2><strong>현재 데이터가 얼마나<br />이례적인지를 나타내는 값</strong><p class="step-item" data-show-step="4">H₀가 참이라고 가정했을 때,<br /><b>현재 관측된 결과만큼 또는<br />그보다 더 극단적인 결과가 나타날 확률</b></p></article>
-        </div>
-        <div class="warning-card step-item" data-show-step="5">⚠ 꼭 기억하세요 <strong>p-value ≠ H₀가 참일 확률</strong></div>
-        <div class="mini-summary step-item" data-show-step="6"><span>α = 미리 정한 기준</span><span>p-value = 데이터에서 계산</span></div>
-      </section>
+      <section class="slide" id="slide05" data-slide="5"><div class="slide-kicker">CORE CONCEPTS · 05</div><h1 class="slide-title compact">α와 p-value가 핵심입니다</h1><div class="concept-grid"><article class="concept-card step-item" data-show-step="1"><h2>유의수준 α</h2><strong>판단의 기준선</strong><p class="step-item" data-show-step="2">분석 전에 미리 정합니다.<br /><b>α = 0.05 (5%)</b><br />H₀ 기각 판단의 기준</p></article><article class="concept-card step-item" data-show-step="3"><h2>p-value</h2><strong>현재 데이터가 얼마나<br />이례적인지를 나타내는 값</strong><p class="step-item" data-show-step="4">H₀가 참이라고 가정했을 때,<br /><b>현재 관측된 결과만큼 또는<br />그보다 더 극단적인 결과가 나타날 확률</b></p></article></div><div class="warning-card step-item" data-show-step="5">⚠ 꼭 기억하세요 <strong>p-value ≠ H₀가 참일 확률</strong></div><div class="mini-summary step-item" data-show-step="6"><span>α = 미리 정한 기준</span><span>p-value = 데이터에서 계산</span></div></section>
 
-      <section class="slide" id="slide06" data-slide="6">
-        <div class="slide-kicker">DECISION · 06</div>
-        <h1 class="slide-title compact">p = 0.03이라면 어떻게 판단할까요?</h1>
-        <div class="number-grid">
-          <article class="number-card step-item" data-show-step="1"><span>판단 기준선 · 유의수준 α</span><strong>0.05</strong><small>5%</small></article>
-          <article class="number-card step-item" data-show-step="2"><span>분석 결과 · p-value</span><strong>0.03</strong><small>3%</small></article>
-        </div>
-        <div class="compare-big step-item" data-show-step="3"><strong>0.03 &lt; 0.05</strong><span>p &lt; α</span></div>
-        <div class="reject-card step-item" data-show-step="4">★ 귀무가설 H₀ 기각</div>
-        <div class="conclusion-card step-item" data-show-step="5"><span>결론</span><strong>AI 학습법의 효과를 지지하는<br />통계적 근거가 있습니다.</strong></div>
-      </section>
+      <section class="slide" id="slide06" data-slide="6"><div class="slide-kicker">DECISION · 06</div><h1 class="slide-title compact">p = 0.03이라면 어떻게 판단할까요?</h1><div class="number-grid"><article class="number-card step-item" data-show-step="1"><span>판단 기준선 · 유의수준 α</span><strong>0.05</strong><small>5%</small></article><article class="number-card step-item" data-show-step="2"><span>분석 결과 · p-value</span><strong>0.03</strong><small>3%</small></article></div><div class="compare-big step-item" data-show-step="3"><strong>0.03 &lt; 0.05</strong><span>p &lt; α</span></div><div class="reject-card step-item" data-show-step="4">★ 귀무가설 H₀ 기각</div><div class="conclusion-card step-item" data-show-step="5"><span>결론</span><strong>AI 학습법의 효과를 지지하는<br />통계적 근거가 있습니다.</strong></div></section>
 
-      <section class="slide" id="slide07" data-slide="7">
-        <div class="slide-kicker">INTERPRETATION · 07</div>
-        <h1 class="slide-title compact">p &lt; 0.05가 모든 것을 의미하지는 않습니다</h1>
-        <div class="interpret-grid">
-          <article class="interpret-card step-item" data-show-step="1"><h2>통계적 유의성 ≠ 효과의 크기</h2><p class="step-item" data-show-step="2">표본이 매우 크다면 조건에 따라<br />작은 차이도 통계적으로 유의할 수 있습니다.</p><strong class="tiny-effect step-item" data-show-step="2">+0.1점</strong><p class="step-item" data-show-step="3">실제로 중요한 변화일까요?</p></article>
-          <article class="interpret-card step-item" data-show-step="4"><h2>결과를 어떻게 해석할까요?</h2><p><strong>p-value만 보지 않습니다.</strong></p><ul><li>효과 크기 (Effect Size)</li><li>실제 변화의 크기</li><li>교육·비즈니스 등 실무적 맥락</li></ul></article>
-        </div>
-        <div class="bottom-emphasis step-item" data-show-step="5"><strong>통계적으로 유의하다 ≠ 실제로 중요한 효과가 있다</strong></div>
-      </section>
+      <section class="slide" id="slide07" data-slide="7"><div class="slide-kicker">INTERPRETATION · 07</div><h1 class="slide-title compact">p &lt; 0.05가 모든 것을 의미하지는 않습니다</h1><div class="interpret-grid"><article class="interpret-card step-item" data-show-step="1"><h2>통계적 유의성 ≠ 효과의 크기</h2><p class="step-item" data-show-step="2">표본이 매우 크다면 조건에 따라<br />작은 차이도 통계적으로 유의할 수 있습니다.</p><strong class="tiny-effect step-item" data-show-step="2">+0.1점</strong><p class="step-item" data-show-step="3">실제로 중요한 변화일까요?</p></article><article class="interpret-card step-item" data-show-step="4"><h2>결과를 어떻게 해석할까요?</h2><p><strong>p-value만 보지 않습니다.</strong></p><ul><li>효과 크기 (Effect Size)</li><li>실제 변화의 크기</li><li>교육·비즈니스 등 실무적 맥락</li></ul></article></div><div class="bottom-emphasis step-item" data-show-step="5"><strong>통계적으로 유의하다 ≠ 실제로 중요한 효과가 있다</strong></div></section>
 
-      <section class="slide" id="slide08" data-slide="8">
-        <div class="slide-kicker">SUMMARY · 08</div>
-        <h1 class="slide-title compact">오늘 이것만 기억하세요!</h1>
-        <div class="summary-flow step-item" data-show-step="1">
-          <div><b>1</b><strong>가설 설정</strong><span>H₀ 효과 없음 · H₁ 효과 있음</span></div><i>↓</i>
-          <div><b>2</b><strong>기준 설정</strong><span>유의수준 α를 미리 설정 · 예: 0.05</span></div><i>↓</i>
-          <div><b>3</b><strong>p-value 계산</strong><span>H₀ 가정 아래 현재 데이터가 얼마나 이례적인지 확인</span></div><i>↓</i>
-          <div><b>4</b><strong>비교 및 판단</strong><span>p &lt; α → H₀ 기각</span></div>
-        </div>
-        <div class="definition-card step-item" data-show-step="2"><strong>가설검정은 관찰된 차이가 우연만으로 설명하기 어려운지를<br />통계적으로 판단하는 과정입니다.</strong></div>
-        <div class="references"><b>Reference</b><span>OpenIntro Statistics (4th ed.)</span><span>Wasserstein & Lazar (2016), The ASA Statement on p-Values</span></div>
-      </section>
+      <section class="slide" id="slide08" data-slide="8"><div class="slide-kicker">SUMMARY · 08</div><h1 class="slide-title compact">오늘 이것만 기억하세요!</h1><div class="summary-flow step-item" data-show-step="1"><div><b>1</b><strong>가설 설정</strong><span>H₀ 효과 없음 · H₁ 효과 있음</span></div><i>↓</i><div><b>2</b><strong>기준 설정</strong><span>유의수준 α를 미리 설정 · 예: 0.05</span></div><i>↓</i><div><b>3</b><strong>p-value 계산</strong><span>H₀ 가정 아래 현재 데이터가 얼마나 이례적인지 확인</span></div><i>↓</i><div><b>4</b><strong>비교 및 판단</strong><span>p &lt; α → H₀ 기각</span></div></div><div class="definition-card step-item" data-show-step="2"><strong>가설검정은 관찰된 차이가 우연만으로 설명하기 어려운지를<br />통계적으로 판단하는 과정입니다.</strong></div><div class="references"><b>Reference</b><span>OpenIntro Statistics (4th ed.)</span><span>Wasserstein & Lazar (2016), The ASA Statement on p-Values</span></div></section>
     </div>
 
-    <footer class="presentation-footer">
-      <div class="progress-wrap"><strong id="slideNumber">01</strong><span>/ 08</span></div>
-      <div class="step-status" id="stepStatus">도입 화면</div>
-      <div class="nav-buttons"><button class="nav-button" id="prevStep" type="button">←</button><button class="nav-button nav-button-primary" id="nextStep" type="button">→</button></div>
-    </footer>
+    <footer class="presentation-footer"><div class="progress-wrap"><strong id="slideNumber">01</strong><span>/ 08</span></div><div class="step-status" id="stepStatus">도입 화면</div><div class="nav-buttons"><button class="nav-button" id="prevStep" type="button">←</button><button class="nav-button nav-button-primary" id="nextStep" type="button">→</button></div></footer>
   </main>
   <script src="assets/app.js"></script>
 </body>
