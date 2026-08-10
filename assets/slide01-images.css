@@ -1,4 +1,6 @@
-.score-card-visual .learning-visual{height:178px;background:#fff;border:0;overflow:hidden;box-shadow:0 5px 18px rgba(31,47,78,.08)}
-.score-card-visual .learning-art{display:block;width:100%;height:100%;object-fit:cover;border-radius:16px}
+.score-card-visual .learning-visual{height:178px;border:0;overflow:hidden;box-shadow:0 5px 18px rgba(31,47,78,.08);background-color:#fff;background-repeat:no-repeat;background-position:center;background-size:cover}
+.score-card-visual .traditional-visual{background-image:url('traditional-study.svg')}
+.score-card-visual .ai-visual{background-image:url('ai-study.svg')}
+.score-card-visual .learning-visual>.desk-scene{display:none}
 .score-card-visual .score-copy{align-self:center}
-@media(max-width:900px){.score-card-visual .learning-visual{height:220px}.score-card-visual .learning-art{object-fit:contain;background:#fff}}
+@media(max-width:900px){.score-card-visual .learning-visual{height:220px;background-size:contain}}
